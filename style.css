@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  margin: 0 auto;
+  width: 900px;
+  height: 500px;
+}
+
+button {
+  width: 300px;
+  padding: 5px 0;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  border: 2px solid black;
+}
+
+.buttons {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  position: relative;
+  width: 900px;
+  height: 400px;
+  overflow: hidden;
+}
+
+img {
+  margin: 15px 0px 100px 15px;
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.catimage, .dogimage {
+  position: absolute;
+  transition: all 0.5s ease;
+  opacity: 0; 
+}
+
+.catimage {
+  width: 855px;
+  background-color: blue;
+}
+
+.dogimage {
+  width: 855px;
+  margin-left: 45px;
+  background-color: green;
+}
+
+.flex {
+  display: flex;
+  position: static;
+  justify-content: center;
+}
+
+.flex .catimage, .flex .dogimage {
+  position: static;
+  flex: 1 1 50%;
+  margin: 0;  
+  width: 100%;
+  opacity: 1;
+}
